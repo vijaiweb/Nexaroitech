@@ -1,0 +1,5 @@
+{
+  "NEXARO-2024-001": { "certId": "NEXARO-2024-001", "name": "Rahul Sharma", "domain": "Web Development", "duration": "60 days", "year": 2024 },
+  "NEXARO-2024-002": { "certId": "NEXARO-2024-002", "name": "Priya Patel", "domain": "Python", "duration": "45 days", "year": 2024 },
+  "NEXARO-2025-001": { "certId": "NEXARO-2025-001", "name": "Amit Kumar", "domain": "Digital Marketing", "duration": "30 days", "year": 2025 }
+}
