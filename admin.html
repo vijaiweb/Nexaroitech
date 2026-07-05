@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel – Nexaroitech</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><div class="logo-n">N</div>Nexaro<span>itech</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="internships.html">Internships</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="verify.html">Verify</a></li>
+        <li><a href="student-dashboard.html">Student Dashboard</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="section-eyebrow" style="color:var(--sky-light);">Staff Only · Prototype</span>
+    <h1>Admin Panel</h1>
+    <p>Review daily task submissions and issue certificates for completed internships.</p>
+  </div>
+
+  <!-- ── Admin Login ── -->
+  <section id="adminAuthSection" class="dash-section">
+    <div class="section-inner" style="max-width:420px;">
+      <form id="adminLoginForm" class="dash-card">
+        <div class="form-group">
+          <label for="adminPassword">Admin Password *</label>
+          <input type="password" id="adminPassword" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Login</button>
+        <p id="adminLoginError" class="dash-error"></p>
+        <p style="font-size:0.78rem;color:var(--gray-400);text-align:center;margin-top:10px;">Demo password: <code>admin123</code> — this is a client-side prototype, not real authentication.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── Admin Dashboard ── -->
+  <section id="adminDashSection" class="dash-section" style="display:none;">
+    <div class="section-inner">
+      <div class="dash-header">
+        <div>
+          <h2 style="font-family:var(--font-display);font-size:1.5rem;">Admin Dashboard</h2>
+          <p style="color:var(--gray-600);font-size:0.9rem;">Manage students, review daily tasks, and issue certificates.</p>
+        </div>
+        <button id="adminLogoutBtn" class="btn-secondary">Logout</button>
+      </div>
+
+      <div class="admin-stats-row" id="adminStatsRow"></div>
+
+      <div class="admin-toolbar">
+        <input type="text" id="studentSearch" placeholder="Search by name, email, or domain..." class="admin-search-input">
+      </div>
+
+      <div id="studentsList" class="admin-students-list"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom"><span>© 2025 Nexaroitech. All rights reserved.</span><a href="privacy-policy.html">Privacy Policy</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/nexaro-data.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
